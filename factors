@@ -28,14 +28,5 @@ else
     odd[$k]=array[$i]
     $k++
 done
-isPalindrome(){
-s=0
-rev=""
-temp_var=$n
-while [ $n -gt 0 ]
-do
-    s=$(( $n % 10 ))
-    n=$(( $n / 10 ))
-    rev=$( echo ${rev}${s} )
-done
+
 
