@@ -2,7 +2,7 @@
 echo "Enter a number "
 read n
 index=0
-echo "Prime facetors of $n :"
+echo "Prime factors of $n :"
 for (( i=2;i<=$n*$n; i++ ))
 do
     while [ $((n%i)) == 0 ]
@@ -14,19 +14,7 @@ do
 
 done
 echo "Array : ${array[@]}"
-e=0
-o=0
-even=()
-odd=()
-for (( i=0; i<${#array[@]}; i++ ))
-do
-  if (( array[$i]%2 == 0 ))
-then
-    even[$e]=array[$i]
-    $e++
-else
-    odd[$o]=array[$i]
-    $o++
-done
+
+
 
 
