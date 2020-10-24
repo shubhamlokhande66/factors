@@ -14,19 +14,19 @@ do
 
 done
 echo "Array : ${array[@]}"
-j=0
-k=0
+e=0
+o=0
 even=()
 odd=()
 for (( i=0; i<${#array[@]}; i++ ))
 do
   if (( array[$i]%2 == 0 ))
 then
-    even[$j]=array[$i]
-    $j++
+    even[$e]=array[$i]
+    $e++
 else
-    odd[$k]=array[$i]
-    $k++
+    odd[$o]=array[$i]
+    $o++
 done
 
 
